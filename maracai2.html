@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fale Com MaraÇaí</title>
+    <style>
+        body {
+            background-color: #800080; /* Cor de fundo roxa */
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            height: 100vh;
+            margin: 0;
+            padding: 20px;
+            color: white;
+            flex-direction: column;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 1200px;
+            margin-bottom: 20px;
+        }
+
+        /* Lado esquerdo - logo */
+        .left-side {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 40%;
+            margin-right: 20px;
+        }
+
+        .logo {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        /* Tabela de preços (lado direito) */
+        .right-side {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 50%;
+        }
+
+        .price-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        .price-table th, .price-table td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .price-table th {
+            background-color: #800080; /* Cor roxa no cabeçalho da tabela */
+            color: white;
+        }
+
+        .price-table td {
+            background-color: #f9f9f9;
+        }
+
+        /* Botões abaixo da tabela */
+        .btn-container {
+            text-align: center;
+        }
+
+        .btn {
+            background-color: #25D366; /* Cor do WhatsApp */
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 18px;
+            cursor: pointer;
+            margin: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            width: 100%;
+            max-width: 250px;
+        }
+
+        .btn-telegram {
+            background-color: #0088cc; /* Cor do Telegram */
+        }
+
+        .btn:hover {
+            opacity: 0.8;
+        }
+
+        /* Rodapé */
+        footer {
+            width: 100%;
+            text-align: center;
+            padding: 20px;
+            background-color: #4b0082; /* Cor roxa para o rodapé */
+            color: white;
+            position: fixed;
+            bottom: 0;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            body {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .left-side {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            .right-side {
+                width: 80%;
+            }
+
+            .btn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+        <!-- Lado esquerdo (logo) -->
+        <div class="left-side">
+            <div class="logo">
+                <img src="https://i.ibb.co/7XdY6sz/Mara-Ai.png" height="400" width="400">
+                Fale Com MaraÇaí Nas Opções
+            </div>
+        </div>
+
+        <!-- Lado direito (tabela de preços e botões) -->
+        <div class="right-side">
+            <table class="price-table">
+                <thead>
+                    <tr><b>
+                        <th>Produto</th>
+                        <th>Preço</th>
+                    <b></tr>
+                </thead>
+                <tbody>color: black;
+                    <b><tr>
+                        <th>Açai 300 ML</th>
+                        <th><b>R$ 13,00<b></th>
+                    </tr><b>
+                    <tr>
+                        <th></strong>Açai 400 ML</th>
+                        <th></strong>R$ 16,00</th>
+                    </tr>
+                    <tr>
+                        <th>Açai 500 ML</th>
+                        <th>R$ 19,00</th>
+                    </tr>
+                    <tr>
+                        <th>2 MARAÇAÍ 400 ML</th>
+                        <th>R$ 30,00</th>
+                    </tr>
+                    <tr>
+                        <th>2 MARAÇAÍ 500 ML</th>
+                        <th>R$ 35,00</th>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="btn-container">
+                <button class="btn" onclick="window.location.href='https://wa.me/5521968050117'">FALE CONOSCO NO WHATSAPP</button>
+                <button class="btn btn-telegram" onclick="window.location.href='https://t.me/maracai021'">FALE CONOSCO PELO TELEGRAM</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Rodapé -->
+    <footer>
+        Todos Os Direitos Reservados @Maraçaí021 2024
+    </footer>
+</body>
+</html>
